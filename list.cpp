@@ -18,6 +18,10 @@ List::~List() {
 
 }
 
+Node * List::newNode(const int &data) {
+    return new Node(data);
+}
+
 // Push a value to the front of the list
 void List::push_front(const std::string &s) {
     Node *new_node = newNode(std::stoi(s));
