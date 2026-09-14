@@ -20,7 +20,7 @@ List::~List() {
 
 // Push a value to the front of the list
 void List::push_front(const std::string &s) {
-    Node *new_node = newNode(s);
+    Node *new_node = newNode(std::stoi(s));
     new_node->next = head;
     head = new_node;
 }
