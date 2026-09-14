@@ -2,16 +2,20 @@
 
 
 List::List() {
-
+size = 0; 
+head = nullptr; 
 
 }
 
 List::~List() {
+ Node *current = head;
+    while (current != nullptr) {
+        Node *next = current->next;
+	delete current;
+        current = next;
+    }
+    head = nullptr;
 
-}
-
-void List::push_front(const std::string &s) {
- 
 }
 
 // Push a value to the front of the list
