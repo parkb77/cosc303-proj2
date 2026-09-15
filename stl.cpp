@@ -27,7 +27,7 @@ void stl_sort(List &l, bool numeric) {
 
 	//Fill Node vector 's'
 	Node *curr = l.head; 
-	while (curr->next != nullptr) { 
+	while (curr != nullptr) { 
 	s.push_back(curr); 
 	curr = curr->next;
 	}
@@ -40,11 +40,12 @@ void stl_sort(List &l, bool numeric) {
 	
 
 	//Order the node pointers based on sorted order
-	for (size_t i = 0; i < s.size(); i++) { 
+	for (size_t i = 0; i < s.size() - 1; i++) { 
 		s[i]->next = s[i + 1]; 
 	} 
 
-	//Set new list head
+	//Set new list head and set final node next null
 	l.head = s[0];
+	s[s.size() - 1]->next = nullptr; 
 }
 
