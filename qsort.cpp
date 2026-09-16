@@ -38,7 +38,7 @@ void qsort_sort(List &l, bool numeric) {
         }
 
 	if (numeric){
-		qsort(arr, l.size, sizeof(int), compareintP);
+		qsort(arr, l.size, sizeof(int), compareIntP);
 	} else {
 		qsort(arr, l.size, sizeof(string), compareStringP);
 	}
