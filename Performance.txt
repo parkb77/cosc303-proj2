@@ -1,3 +1,4 @@
+STL Sort:
 chiggi18:tesla26 ~/cs303/proj2> /usr/bin/time -f "Elapsed: %e sec\nMemory: %M KB" \                                                               <-  6:10PM
 ./volsort -m stl -n < /tmp/input_100000 > /dev/null
 Elapsed: 0.57 sec
@@ -19,7 +20,7 @@ chiggi18:tesla26 ~/cs303/proj2> /usr/bin/time -f "Elapsed: %e sec\nMemory: %M KB
 Elapsed: 184.49 sec
 Memory: 1828140 KB
 
-
+QSORT:
 chiggi18:tesla26 ~/cs303/proj2> /usr/bin/time -f "Elapsed: %e sec\nMemory: %M KB" \                                                               <-  6:17PM
 ./volsort -m qsort -n < /tmp/input_100000 > /dev/null
 Elapsed: 0.22 sec
@@ -40,4 +41,54 @@ chiggi18:tesla26 ~/cs303/proj2> /usr/bin/time -f "Elapsed: %e sec\nMemory: %M KB
 ./volsort -m qsort -n < /tmp/input_25000000 > /dev/null
 Elapsed: 113.43 sec
 Memory: 1955604 KB
+
+
+Merge Sort:
+
+pbabb2:hydra11 ~/cs303/proj2> /usr/bin/time -f "Elapsed: %e sec\nMemory: %M KB" ./volsort -m merge -n < /tmp/input_100000 > /dev/null
+Elapsed: 0.08 sec
+Memory: 9856 KB
+
+pbabb2:hydra11 ~/cs303/proj2> python3 generate.py 500000 /tmp/input_500000
+/usr/bin/time -f "Elapsed: %e sec\nMemory: %M KB" ./volsort -m merge -n < /tmp/input_500000 > /dev/null
+Elapsed: 0.47 sec
+Memory: 34816 KB
+
+pbabb2:hydra11 ~/cs303/proj2> python3 generate.py 1000000 /tmp/input_1000000
+/usr/bin/time -f "Elapsed: %e sec\nMemory: %M KB" ./volsort -m merge -n < /tmp/input_1000000 > /dev/null
+Elapsed: 1.11 sec
+Memory: 66048 KB
+
+pbabb2:hydra11 ~/cs303/proj2> python3 generate.py 10000000 /tmp/input_10000000
+/usr/bin/time -f "Elapsed: %e sec\nMemory: %M KB" ./volsort -m merge -n < /tmp/input_10000000 > /dev/null
+Elapsed: 14.47 sec
+Memory: 628608 KB
+
+pbabb2:hydra11 ~/cs303/proj2> python3 generate.py 25000000 /tmp/input_25000000
+/usr/bin/time -f "Elapsed: %e sec\nMemory: %M KB" ./volsort -m merge -n < /tmp/input_25000000 > /dev/null
+Elapsed: 41.19 sec
+Memory: 1566080 KB
+
+Quick Sort:
+
+pbabb2:hydra11 ~/cs303/proj2> /usr/bin/time -f "Elapsed: %e sec\nMemory: %M KB" ./volsort -m quick -n < /tmp/input_100000 > /dev/null
+Elapsed: 0.09 sec
+Memory: 9856 KB
+
+pbabb2:hydra11 ~/cs303/proj2> /usr/bin/time -f "Elapsed: %e sec\nMemory: %M KB" ./volsort -m quick -n < /tmp/input_500000 > /dev/null
+Elapsed: 0.79 sec
+Memory: 34816 KB
+
+pbabb2:hydra11 ~/cs303/proj2> /usr/bin/time -f "Elapsed: %e sec\nMemory: %M KB" ./volsort -m quick -n < /tmp/input_1000000 > /dev/null
+Elapsed: 1.90 sec
+Memory: 66048 KB
+
+pbabb2:hydra11 ~/cs303/proj2> /usr/bin/time -f "Elapsed: %e sec\nMemory: %M KB" ./volsort -m quick -n < /tmp/input_10000000 > /dev/null
+Elapsed: 36.22 sec
+Memory: 628608 KB
+
+pbabb2:hydra11 ~/cs303/proj2> /usr/bin/time -f "Elapsed: %e sec\nMemory: %M KB" ./volsort -m quick -n < /tmp/input_25000000 > /dev/null
+Elapsed: 95.88 sec
+Memory: 1566080 KB
+
 
