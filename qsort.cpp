@@ -28,7 +28,7 @@ void qsort_sort(List &l, bool numeric) {
 	if (l.head == nullptr) return; 
 
 	Node* current = l.head;
-	const Node** arr = new  Node*[l.size];
+	Node** arr = new Node*[l.size];
 	int index = 0;
 	
 	while (current != nullptr){
