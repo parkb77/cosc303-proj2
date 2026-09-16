@@ -28,19 +28,19 @@ void qsort_sort(List &l, bool numeric) {
 	if (l.head == nullptr) return; 
 
 	Node* current = l.head;
-	const Node** arr = new const Node*[l.size];
+	const Node** arr = new  Node*[l.size];
 	int index = 0;
 	
 	while (current != nullptr){
-                arr[index].number = current;
+                arr[index] = current;
 		index++;
         	current=current->next;
         }
 
 	if (numeric){
-		qsort(arr, l.size, sizeof(int), compareIntP);
+		qsort(arr, l.size, sizeof(Node*), compareIntP);
 	} else {
-		qsort(arr, l.size, sizeof(string), compareStringP);
+		qsort(arr, l.size, sizeof(Node*), compareStringP);
 	}
 	
 	// Update the linked list with arr stuff
