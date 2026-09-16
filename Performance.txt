@@ -18,3 +18,26 @@ chiggi18:tesla26 ~/cs303/proj2> /usr/bin/time -f "Elapsed: %e sec\nMemory: %M KB
 ./volsort -m stl -n < /tmp/input_25000000 > /dev/null
 Elapsed: 184.49 sec
 Memory: 1828140 KB
+
+
+chiggi18:tesla26 ~/cs303/proj2> /usr/bin/time -f "Elapsed: %e sec\nMemory: %M KB" \                                                               <-  6:17PM
+./volsort -m qsort -n < /tmp/input_100000 > /dev/null
+Elapsed: 0.22 sec
+Memory: 10976 KB
+chiggi18:tesla26 ~/cs303/proj2> /usr/bin/time -f "Elapsed: %e sec\nMemory: %M KB" \                                                               <-  6:17PM
+./volsort -m qsort -n < /tmp/input_500000 > /dev/null
+Elapsed: 1.19 sec
+Memory: 42176 KB
+chiggi18:tesla26 ~/cs303/proj2> /usr/bin/time -f "Elapsed: %e sec\nMemory: %M KB" \                                                               <-  6:18PM
+./volsort -m qsort -n < /tmp/input_1000000 > /dev/null
+Elapsed: 2.24 sec
+Memory: 81236 KB
+chiggi18:tesla26 ~/cs303/proj2> /usr/bin/time -f "Elapsed: %e sec\nMemory: %M KB" \                                                               <-  6:18PM
+./volsort -m qsort -n < /tmp/input_10000000 > /dev/null
+Elapsed: 52.50 sec
+Memory: 784256 KB
+chiggi18:tesla26 ~/cs303/proj2> /usr/bin/time -f "Elapsed: %e sec\nMemory: %M KB" \                                                               <-  6:19PM
+./volsort -m qsort -n < /tmp/input_25000000 > /dev/null
+Elapsed: 113.43 sec
+Memory: 1955604 KB
+
