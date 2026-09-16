@@ -8,7 +8,10 @@
 
 
 int compareStringP(const void * a, const void * b){
-	return strcmp(*(const char **) a, *(const char **) b);
+	const Node * ia = *(const Node **) a;
+        const Node * ib = *(const Node **) b;
+
+	return ia->string.compare(ib->string);
 }
 
 int compareIntP(const void * a, const void * b){
@@ -29,8 +32,7 @@ void qsort_sort(List &l, bool numeric) {
 	int index = 0;
 	
 	while (current != nullptr){
-                arr[index].number = current->number;
-                arr[index].string = current->string;
+                arr[index].number = current;
 		index++;
         	current=current->next;
         }
@@ -41,14 +43,29 @@ void qsort_sort(List &l, bool numeric) {
 		qsort(arr, l.size, sizeof(string), compareStringP);
 	}
 	
-	current = l.head;
+	// Update the linked list with arr stuff
+	/*current = l.head;
         index=0;
         while (current != nullptr){
-                current->string = arr[index].string;
-                current->number = arr[index].number;
+                current->string = arr[index]->string;
+                current->number = arr[index]->number;
 		index++;
                 current = current->next;
         }
+	*/
+	// Scrapped this because it modified Nodes via pointer 
+	// Found better way to just reconnect list using the array
+	//
+	
+	// set new head
+	l.head = arr[0];
+
+	for (size_t i = 0; i < l.size -1; i++){
+		arr[i]->next = arr[i+1];
+	}
+
+	arr[l.size-1]->next = nullptr;
+
 	delete[] arr;
 }
 
