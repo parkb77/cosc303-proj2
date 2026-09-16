@@ -18,13 +18,18 @@ List::~List() {
 
 }
 
-Node * List::newNode(const int &data) {
-    return new Node(data);
-}
-
 // Push a value to the front of the list
 void List::push_front(const std::string &s) {
-    Node *new_node = newNode(std::stoi(s));
+    Node *new_node = new Node;
+	new_node->string = s;
+
+	//Source: Google overview for stoi handling
+	try { 
+		new_node->number = std::stoi(s);
+	} catch(...) { 
+		new_node->number = 0;
+	}
     new_node->next = head;
     head = new_node;
+	size++;
 }

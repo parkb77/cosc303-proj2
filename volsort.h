@@ -24,6 +24,10 @@ struct List {
 
 // Functions -------------------------------------------------------------------
 
+//Comparision functions used in STL and Merge
+bool node_number_compare(const Node *a, const Node *b);
+bool node_string_compare(const Node *a, const Node *b);
+
 void stl_sort(List &l, bool numeric);	// define in stl.cpp - sort using std::sort
 void qsort_sort(List &l, bool numeric);	// define in qsort.cpp - sort using qsort from cstdlib
 void merge_sort(List &l, bool numeric);	// define in merge.cpp - your implementation
