@@ -22,10 +22,11 @@ List::~List() {
 void List::push_front(const std::string &s) {
     Node *new_node = new Node;
 	new_node->string = s;
-	
+
+	//Source: Google overview for stoi handling
 	try { 
 		new_node->number = std::stoi(s);
-	} catch { 
+	} catch(...) { 
 		new_node->number = 0;
 	}
     new_node->next = head;
