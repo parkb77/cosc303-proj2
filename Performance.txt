@@ -1,0 +1,20 @@
+chiggi18:tesla26 ~/cs303/proj2> /usr/bin/time -f "Elapsed: %e sec\nMemory: %M KB" \                                                               <-  6:10PM
+./volsort -m stl -n < /tmp/input_100000 > /dev/null
+Elapsed: 0.57 sec
+Memory: 10528 KB
+chiggi18:tesla26 ~/cs303/proj2> /usr/bin/time -f "Elapsed: %e sec\nMemory: %M KB" \                                                               <-  6:11PM
+./volsort -m stl -n < /tmp/input_500000 > /dev/null
+Elapsed: 1.57 sec
+Memory: 38824 KB
+chiggi18:tesla26 ~/cs303/proj2> /usr/bin/time -f "Elapsed: %e sec\nMemory: %M KB" \                                                               <-  6:11PM
+./volsort -m stl -n < /tmp/input_1000000 > /dev/null
+Elapsed: 3.71 sec
+Memory: 75200 KB
+chiggi18:tesla26 ~/cs303/proj2> /usr/bin/time -f "Elapsed: %e sec\nMemory: %M KB" \                                                               <-  6:11PM
+./volsort -m stl -n < /tmp/input_10000000 > /dev/null
+Elapsed: 73.66 sec
+Memory: 759464 KB
+chiggi18:tesla26 ~/cs303/proj2> /usr/bin/time -f "Elapsed: %e sec\nMemory: %M KB" \                                                               <-  6:12PM
+./volsort -m stl -n < /tmp/input_25000000 > /dev/null
+Elapsed: 184.49 sec
+Memory: 1828140 KB
