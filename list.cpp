@@ -22,7 +22,12 @@ List::~List() {
 void List::push_front(const std::string &s) {
     Node *new_node = new Node;
 	new_node->string = s;
-	new_node->number = std::stoi(s);
+	
+	try { 
+		new_node->number = std::stoi(s);
+	} catch { 
+		new_node->number = 0;
+	}
     new_node->next = head;
     head = new_node;
 	size++;
