@@ -7,6 +7,8 @@ git clone https://github.com/parkb77/cosc303-proj2.git
 git pull
 make test
 
+#REPO: https://github.com/parkb77/cosc303-proj2
+
 #PERFORMANCE
 
 | Mode    | Size      |  Elapsed Time | Memory     |
@@ -33,9 +35,16 @@ make test
 | QUICK   | 25000000  | 95.88 sec     | 1566080 KB |
 
 #DISCUSSION
+1. Relative Performance:
 Merge sort was the fastest, followed by quick, Q, then STL. Both Merge and Quick were
 faster and used significantly less memory than STL and Q. This was likely due to the latter using temporary vectors to help 
 sort the nodes rather than simply redirecting the pointers.
+
+2. Theoretical vs Actual Performance:
+Despite all the algorithms being theoretically on average O(n log n), varying overhead performances (i.e. use of a temp vector), differing implementation approaches (i.e. vector vs array), and non-optimal inputs can result in the actual performance differences observed. 
+   
+3. Optimal Algorithm:
+In my opinion, Merge sort is the best and most optimal sorting algorithm in terms of both time and memory. Merge remains at worst O(n log n) while the second fastest algorithm, quick sort, risks O(n^2) at worst case scenario. 
 
 
 #CONTRIBUTIONS / REFLECTION
