@@ -1,15 +1,15 @@
-# CONTRIBUTORS
+## CONTRIBUTORS
 Parker Babb - pbabb2 - pbabb2@vols.utk.edu
 Casey Higgins - casey-h-vols - chiggi18@vols.utk.edu
 
-# HOW TO RUN
+## HOW TO RUN
 git clone https://github.com/parkb77/cosc303-proj2.git
 git pull
 make test
 
-# REPO: https://github.com/parkb77/cosc303-proj2
+## REPO: https://github.com/parkb77/cosc303-proj2
 
-# PERFORMANCE
+## PERFORMANCE
 
 | Mode    | Size      |  Elapsed Time | Memory     |
 |---------|-----------|---------------|------------|
@@ -34,7 +34,7 @@ make test
 | QUICK   | 10000000  | 36.22 sec     | 628608 KB  |
 | QUICK   | 25000000  | 95.88 sec     | 1566080 KB |
 
-# DISCUSSION
+## DISCUSSION
 1. Relative Performance:
 Merge sort was the fastest, followed by quick, Q, then STL. Both Merge and Quick were
 faster and used significantly less memory than STL and Q. This was likely due to the latter using temporary vectors to help 
@@ -47,7 +47,7 @@ Despite all the algorithms being theoretically on average O(n log n), varying ov
 In my opinion, Merge sort is the best and most optimal sorting algorithm in terms of both time and memory. Merge remains at worst O(n log n) while the second fastest algorithm, quick sort, risks O(n^2) at worst case scenario. 
 
 
-# CONTRIBUTIONS / REFLECTION
+## CONTRIBUTIONS / REFLECTION
 
 Once again, the workload was fairly split and good communication maintained. I completed the STL 
 and MERGE algorithms, timed the MERGE and QUICK programs, and created the README. We exchanged ideas on implementation and helped one another 
