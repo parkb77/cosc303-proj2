@@ -37,7 +37,7 @@ make test
 ## DISCUSSION
 1. Relative Performance:
 Merge sort was the fastest, followed by quick, Q, then STL. Both Merge and Quick were
-faster and used significantly less memory than STL and Q. This was likely due to the latter using temporary vectors to help 
+faster and used significantly less memory than STL and Q. This was likely due to the latter using a temporary vector and an array of Node* to help 
 sort the nodes rather than simply redirecting the pointers.
 
 2. Theoretical vs Actual Performance:
