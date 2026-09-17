@@ -1,6 +1,6 @@
 #CONTRIBUTORS
 Parker Babb - pbabb2 - pbabb2@vols.utk.edu
-Casey Higgins - 
+Casey Higgins - casey-h-vols - chiggi18@vols.utk.edu
 
 #HOW TO RUN
 git clone https://github.com/parkb77/cosc303-proj2.git
@@ -53,3 +53,10 @@ Once again, the workload was fairly split and good communication maintained. I c
 and MERGE algorithms, timed the MERGE and QUICK programs, and created the README. We exchanged ideas on implementation and helped one another 
 debug. This project made me a lot more comfortable navigating GitHub while also solidifying my understanding of pointers.
 - Parker Babb
+
+Good split and well communicated for work done and meeting to pair program. I wrote the qsort and quick sort algorithm implementations as well as the python
+to create the input file generator. 
+Ran into similar slow downs between qsort and stl implementation and quick / merge, but were able to reflect and share thoughts/ details to help each other. One of the 
+main experience gains was working with c-style pointer access in qsort (the arr of Node pointers) and running down debug threads fixing pointer access
+and what the algorithm actually needed. 
+- Casey Higgins
