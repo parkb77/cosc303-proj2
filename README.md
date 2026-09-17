@@ -1,13 +1,13 @@
-##CONTRIBUTORS
+#CONTRIBUTORS
 Parker Babb - pbabb2 - pbabb2@vols.utk.edu
 Casey Higgins - 
 
-##HOW TO RUN
+#HOW TO RUN
 git clone https://github.com/parkb77/cosc303-proj2.git
 git pull
 make test
 
-##PERFORMANCE
+#PERFORMANCE
 
 | Mode    | Size      |  Elapsed Time | Memory     |
 |---------|-----------|---------------|------------|
@@ -32,13 +32,13 @@ make test
 | QUICK   | 10000000  | 36.22 sec     | 628608 KB  |
 | QUICK   | 25000000  | 95.88 sec     | 1566080 KB |
 
-##DISCUSSION
+#DISCUSSION
 Merge sort was the fastest, followed by quick, Q, then STL. Both Merge and Quick were
 faster and used significantly less memory than STL and Q. This was likely due to the latter using temporary vectors to help 
 sort the nodes rather than simply redirecting the pointers.
 
 
-##CONTRIBUTIONS / REFLECTION
+#CONTRIBUTIONS / REFLECTION
 
 Once again, the workload was fairly split and good communication maintained. I completed the STL 
 and MERGE algorithms, timed the MERGE and QUICK programs, and created the README. We exchanged ideas on implementation and helped one another 
